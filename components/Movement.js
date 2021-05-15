@@ -14,8 +14,8 @@ function Movement() {
   };
 
   Movement.prototype.calculateTrip = function () {
-    const time = (new Date().getTime() - this.speedTimeFlag) / 1000;
-    const distance = ((this.speed * 1000) / 3600) * time;
+    const timeDiff = (new Date().getTime() - this.speedTimeFlag) / 1000;
+    const distance = ((this.speed * 1000) / 3600) * timeDiff;
 
     this.trip += distance;
     this.speedTimeFlag = new Date().getTime();
