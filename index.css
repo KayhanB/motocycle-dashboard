@@ -1,0 +1,134 @@
+* {
+  user-select: none;
+}
+html {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --text: #c5c5c5;
+  --active: #c5c5c5;
+  --passive: #454545;
+  --error: #ff2c2c;
+}
+body {
+  width: 400px;
+  height: 240px;
+  background-color: #303030;
+  color: var(--text);
+  padding: 0;
+  margin: 0;
+}
+.main {
+  box-sizing: border-box;
+}
+.section-1 {
+  height: 14px;
+}
+.clock {
+  padding: 3px 5px;
+  font-size: 12px;
+}
+.section-2 {
+  height: 50px;
+}
+.rpm {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.rpm-item {
+  width: 4px;
+  height: 24px;
+  background-color: var(--passive);
+}
+.section-3 {
+  height: 170px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.fuel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}
+.fuel-text {
+  font-size: 12px;
+}
+.fuel-divider {
+  border-bottom: 0.2px solid var(--active);
+  width: 40px;
+}
+.fuel-item {
+  width: 24px;
+  height: 3px;
+  background-color: var(--passive);
+  margin-top: 9px;
+}
+
+.dests {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.dest_section-1 {
+  text-align: center;
+}
+.speed {
+  font-size: 63px;
+}
+/* .dest_section-2 {
+} */
+.trip {
+  width: 86px;
+  height: 19px;
+  border: 1px solid #c5c5c5;
+  border-radius: 3px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.temp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}
+.temp-text {
+  font-size: 12px;
+}
+.temp-divider {
+  border-bottom: 0.2px solid var(--active);
+  width: 40px;
+}
+.temp-item {
+  width: 24px;
+  height: 3px;
+  background-color: var(--passive);
+  margin-top: 9px;
+}
+
+.active {
+  background-color: var(--active) !important;
+}
+
+.error {
+  background-color: var(--error) !important;
+}

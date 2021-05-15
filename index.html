@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destro 250</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="section-1">
+            <div id="clock" class="clock">14:28</div>
+        </div>
+        <div class="section-2">
+            <div id="rpm" class="rpm"></div>
+        </div>
+        <div class="section-3">
+            <div class="fuel">
+                <div class="temp-text">FUEL</div>
+                <div class="temp-divider"></div>
+                <div id="fuel"></div>
+
+            </div>
+            <div class="dests">
+                <div class="dest_section-1">
+                    <div id="speed" class="speed"></div>
+                    <div class="speed-desc">KM/H</div>
+                </div>
+                <div class="dest_section-2">
+                    <div id="trip" class="trip"></div>
+                </div>
+            </div>
+            <div class="temp">
+                <div class="temp-text">TEMP</div>
+                <div class="temp-divider"></div>
+                <div id="temp"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="components/Db.js"></script>
+    <script src="components/Clock.js"></script>
+    <script src="components/Movement.js"></script>
+    <script src="components/LinearPercentage.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
