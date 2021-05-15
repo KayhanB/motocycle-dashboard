@@ -1,1 +1,1 @@
-![alt text](https://ibb.co/bP6tTdM)
+![GitHub Logo](/images/dashboard.png)
