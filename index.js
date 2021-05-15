@@ -9,6 +9,7 @@ const Rpm = new LinearPercentage({
 
 Rpm.render();
 
+// makes rpm lines like funnel
 for (let i = 0; i < Rpm.totalItem; i++) {
   const h = i * 2;
   Rpm.element.children.item(i).style = `height:${h + 12}px`;
@@ -17,9 +18,6 @@ for (let i = 0; i < Rpm.totalItem; i++) {
 setInterval(() => {
   const data = Math.random() * 100;
   Rpm.receiveSensorData(data);
-  for (let i = 0; i < Rpm.totalItem; i++) {
-    Rpm.element.children.item(i).style = `height:${2 * i + 12}px`;
-  }
 }, 100);
 
 // ************* MOVEMENT *************
