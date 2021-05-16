@@ -25,10 +25,13 @@ function LinearPercentage({ elementId, totalItem, direction }) {
 
     for (let i = 0; i < this.totalItem; i++) {
       if (targetIndex === this.totalItem) {
+        this.element.children[i].classList.remove("active");
         this.element.children[i].classList.add("error");
       } else if (i < targetIndex) {
+        this.element.children[i].classList.remove("error");
         this.element.children[i].classList.add("active");
       } else {
+        this.element.children[i].classList.remove("error");
         this.element.children[i].classList.remove("active");
       }
     }
