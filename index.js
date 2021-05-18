@@ -41,6 +41,12 @@ Fuel.render();
 
 Fuel.receiveSensorData(50);
 
+// ************* GEAR *************
+// true = in gear false = gear free
+const gear = new Gear();
+
+gear.setGearPosition(false);
+
 // ************* TEMP *************
 const Temp = new LinearPercentage({
   elementId: "temp",
@@ -51,3 +57,9 @@ const Temp = new LinearPercentage({
 Temp.render();
 
 Temp.receiveSensorData(70);
+
+// ************* GYRO *************
+// true = in gear false = gear free
+const gyro = new Gyroscope();
+
+gyro.setGyroDegree(200);
